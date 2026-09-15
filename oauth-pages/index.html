@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rclone 自建 OAuth 客户端 / Self-hosted OAuth Client</title>
+<style>
+:root{
+  --fg:#1f2328; --fg-muted:#59636e; --bg:#ffffff; --bg-soft:#f6f8fa;
+  --border:#d1d9e0; --link:#0969da;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; padding:48px 20px 80px; background:var(--bg-soft); color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",Roboto,Helvetica,Arial,sans-serif;
+  font-size:16px; line-height:1.75;
+}
+main{
+  max-width:760px; margin:0 auto; background:var(--bg);
+  border:1px solid var(--border); border-radius:12px; padding:40px 44px 48px;
+}
+h1{font-size:26px; line-height:1.35; margin:0 0 6px; letter-spacing:.2px}
+h2{font-size:19px; margin:36px 0 10px; padding-top:20px; border-top:1px solid var(--border)}
+h2:first-of-type{border-top:0; padding-top:0}
+h3{font-size:16px; margin:22px 0 6px}
+p{margin:0 0 12px}
+ul{margin:0 0 12px; padding-left:22px}
+li{margin:4px 0}
+a{color:var(--link)}
+code{
+  background:var(--bg-soft); border:1px solid var(--border); border-radius:6px;
+  padding:1px 6px; font-size:13px; word-break:break-all;
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+.meta{color:var(--fg-muted); font-size:14px; margin:0 0 28px}
+.lead{font-size:17px}
+.nav{display:flex; flex-wrap:wrap; gap:10px; margin:22px 0 0; padding:0; list-style:none}
+.nav a{
+  display:inline-block; padding:9px 16px; border:1px solid var(--border);
+  border-radius:8px; background:var(--bg-soft); text-decoration:none; font-size:15px;
+}
+.lang-sep{margin:56px 0 0; border:0; border-top:2px solid var(--border)}
+footer{margin-top:40px; padding-top:18px; border-top:1px solid var(--border); color:var(--fg-muted); font-size:14px}
+@media(max-width:600px){
+  body{padding:20px 12px 48px}
+  main{padding:24px 20px 32px; border-radius:10px}
+  h1{font-size:22px}
+}
+</style>
+</head>
+<body>
+<main>
+
+  <h1>rclone 自建 OAuth 客户端</h1>
+  <p class="meta">最后更新：2026-09-15</p>
+
+  <p class="lead">本页说明一个<strong>个人自用</strong> OAuth 客户端的用途：该客户端仅供应用所有者本人在其自有服务器上运行 rclone，将服务器备份文件上传至其本人的 Google Drive。</p>
+  <p>本应用不面向公众提供服务、不开放注册，使用者仅应用所有者本人（1 人）。</p>
+
+  <ul class="nav">
+    <li><a href="privacy.html">隐私权政策</a></li>
+    <li><a href="terms.html">服务条款</a></li>
+    <li><a href="#en">English</a></li>
+  </ul>
+
+  <h2>联系方式</h2>
+  <!-- 替换为你的真实邮箱 -->
+  <p>邮箱：<a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></p>
+
+  <hr class="lang-sep">
+
+  <h1 id="en" lang="en" style="font-size:23px;margin-top:0">rclone Self-hosted OAuth Client</h1>
+  <p class="meta" lang="en">Last updated: September 15, 2026</p>
+
+  <p class="lead" lang="en">This page describes the purpose of a <strong>personal-use</strong> OAuth client: it is used solely by its owner to run rclone on a server they own, in order to upload server backup files to their own Google Drive.</p>
+  <p lang="en">The application is not offered as a service to the public, does not allow registration, and has exactly one user &mdash; the application owner.</p>
+
+  <ul class="nav" lang="en">
+    <li><a href="privacy.html#en">Privacy Policy</a></li>
+    <li><a href="terms.html#en">Terms of Service</a></li>
+  </ul>
+
+  <h2 lang="en">Contact</h2>
+  <!-- replace with your real email -->
+  <p lang="en">Email: <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></p>
+
+  <footer>
+    rclone self-hosted OAuth client &middot; 2026-09-15
+  </footer>
+
+</main>
+</body>
+</html>
