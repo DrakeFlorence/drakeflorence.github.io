@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私权政策 / Privacy Policy — rclone 自建 OAuth 客户端</title>
+<style>
+:root{
+  --fg:#1f2328; --fg-muted:#59636e; --bg:#ffffff; --bg-soft:#f6f8fa;
+  --border:#d1d9e0; --link:#0969da;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; padding:48px 20px 80px; background:var(--bg-soft); color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","PingFang SC","Microsoft YaHei",Roboto,Helvetica,Arial,sans-serif;
+  font-size:16px; line-height:1.75;
+}
+main{
+  max-width:760px; margin:0 auto; background:var(--bg);
+  border:1px solid var(--border); border-radius:12px; padding:40px 44px 48px;
+}
+h1{font-size:26px; line-height:1.35; margin:0 0 6px; letter-spacing:.2px}
+h2{font-size:19px; margin:36px 0 10px; padding-top:20px; border-top:1px solid var(--border)}
+h2:first-of-type{border-top:0; padding-top:0}
+h3{font-size:16px; margin:22px 0 6px}
+p{margin:0 0 12px}
+ul{margin:0 0 12px; padding-left:22px}
+li{margin:4px 0}
+a{color:var(--link)}
+code{
+  background:var(--bg-soft); border:1px solid var(--border); border-radius:6px;
+  padding:1px 6px; font-size:13px; word-break:break-all;
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+.meta{color:var(--fg-muted); font-size:14px; margin:0 0 28px}
+.lead{font-size:17px}
+.nav{display:flex; flex-wrap:wrap; gap:10px; margin:22px 0 0; padding:0; list-style:none}
+.nav a{
+  display:inline-block; padding:9px 16px; border:1px solid var(--border);
+  border-radius:8px; background:var(--bg-soft); text-decoration:none; font-size:15px;
+}
+.lang-sep{margin:56px 0 0; border:0; border-top:2px solid var(--border)}
+footer{margin-top:40px; padding-top:18px; border-top:1px solid var(--border); color:var(--fg-muted); font-size:14px}
+@media(max-width:600px){
+  body{padding:20px 12px 48px}
+  main{padding:24px 20px 32px; border-radius:10px}
+  h1{font-size:22px}
+}
+</style>
+</head>
+<body>
+<main>
+
+  <h1>隐私权政策</h1>
+  <p class="meta">最后更新：2026-09-15</p>
+
+  <ul class="nav">
+    <li><a href="index.html">返回首页</a></li>
+    <li><a href="terms.html">服务条款</a></li>
+    <li><a href="#en">English</a></li>
+  </ul>
+
+  <h2>1. 关于本应用</h2>
+  <p>本应用是应用所有者<strong>个人自用</strong>的 OAuth 客户端，仅供 rclone 命令行工具在其自有服务器上执行自动化备份时使用。本应用不面向公众提供服务、不开放注册，使用者仅应用所有者本人（1 人）。</p>
+
+  <h2>2. 访问哪些数据</h2>
+  <p>经账号所有者明确授权后，本应用通过 Google Drive API 访问以下范围：</p>
+  <ul>
+    <li><code>https://www.googleapis.com/auth/drive</code> —— 读取、创建、删除该 Google Drive 中的文件。</li>
+  </ul>
+  <p>本应用<strong>不会</strong>访问 Gmail、通讯录、日历、相册或任何其他 Google 服务的数据。</p>
+
+  <h2>3. 数据用途</h2>
+  <p>仅用于<strong>唯一目的</strong>：将应用所有者自有服务器的网站与数据库备份文件上传至其本人的 Google Drive，并清理超出保留期的旧备份。不用于广告、用户画像、数据分析或任何其他用途。</p>
+
+  <h2>4. 数据存储与保留</h2>
+  <ul>
+    <li>备份文件存放于应用所有者<strong>本人的 Google Drive</strong>，受其账号的存储配额与安全设置约束。</li>
+    <li>OAuth 授权令牌仅存放于应用所有者<strong>本人的服务器</strong>（文件权限 600，仅系统管理员可读），不发送至任何第三方。</li>
+    <li>本应用<strong>不自建服务器、不采集、不中转、不留存</strong>任何用户数据。</li>
+  </ul>
+
+  <h2>5. 数据共享</h2>
+  <p>本应用<strong>不向任何第三方</strong>出售、出租、共享或披露任何数据。除完成上述备份所必需的 Google Drive API 调用外，不与任何外部系统通信。</p>
+
+  <h2>6. 数据安全</h2>
+  <p>授权令牌以受限权限存储，仅服务器管理员可读；与 Google 的全部通信经 HTTPS/TLS 加密；备份文件的访问控制由应用所有者本人 Google 账号的安全设置（含两步验证）保障。</p>
+
+  <h2>7. 你的权利</h2>
+  <ul>
+    <li>可随时在 <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a> 撤销本应用授权，撤销后本应用立即无法访问该 Drive。</li>
+    <li>可随时在 Google Drive 中自行删除本应用创建的任何文件；删除对应文件夹即等同删除本应用创建的全部数据。</li>
+  </ul>
+
+  <h2>8. Google API 服务用户数据政策</h2>
+  <p>本应用对自 Google API 获取之信息的使用，遵守 <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>，包括其中的<strong>有限使用（Limited Use）</strong>要求。</p>
+
+  <h2>9. 政策变更</h2>
+  <p>本政策如有变更，将更新本页顶部的“最后更新”日期。</p>
+
+  <h2>10. 联系方式</h2>
+  <!-- 替换为你的真实邮箱 -->
+  <p>邮箱：<a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></p>
+
+  <hr class="lang-sep">
+
+  <h1 id="en" lang="en" style="font-size:23px;margin-top:0">Privacy Policy</h1>
+  <p class="meta" lang="en">Last updated: September 15, 2026</p>
+
+  <ul class="nav" lang="en">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="terms.html#en">Terms of Service</a></li>
+  </ul>
+
+  <h2 lang="en">1. About this application</h2>
+  <p lang="en">This application is a <strong>personal-use</strong> OAuth client. It is used solely by its owner to run the rclone command-line tool on a server they own, for automated backups. It is not offered to the public, does not allow registration, and has exactly one user &mdash; the application owner.</p>
+
+  <h2 lang="en">2. What data is accessed</h2>
+  <p lang="en">With the account owner's explicit authorization, this application accesses the following Google Drive API scope:</p>
+  <ul lang="en">
+    <li><code>https://www.googleapis.com/auth/drive</code> &mdash; read, create, and delete files in that Google Drive.</li>
+  </ul>
+  <p lang="en">This application does <strong>not</strong> access Gmail, Contacts, Calendar, Photos, or any other Google service.</p>
+
+  <h2 lang="en">3. How the data is used</h2>
+  <p lang="en">For one purpose only: uploading website and database backup files from the application owner's own server to their own Google Drive, and removing backups that have exceeded their retention period. The data is not used for advertising, profiling, analytics, or any other purpose.</p>
+
+  <h2 lang="en">4. Storage and retention</h2>
+  <ul lang="en">
+    <li>Backup files are stored in the application owner's <strong>own Google Drive</strong>, subject to that account's storage quota and security settings.</li>
+    <li>The OAuth authorization token is stored only on the application owner's <strong>own server</strong> (file mode 600, readable by the system administrator only), and is never transmitted to any third party.</li>
+    <li>This application operates <strong>no servers of its own</strong> and does not collect, relay, or retain any user data.</li>
+  </ul>
+
+  <h2 lang="en">5. Data sharing</h2>
+  <p lang="en">This application <strong>does not sell, rent, share, or disclose</strong> any data to any third party. It communicates with no external system other than the Google Drive API calls required to perform the backups described above.</p>
+
+  <h2 lang="en">6. Data security</h2>
+  <p lang="en">The authorization token is stored with restricted permissions, readable only by the server administrator. All communication with Google is encrypted over HTTPS/TLS. Access to backup files is governed by the application owner's own Google Account security settings, including two-step verification.</p>
+
+  <h2 lang="en">7. Your rights</h2>
+  <ul lang="en">
+    <li>You may revoke this application's access at any time at <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>. Once revoked, the application immediately loses all access to the Drive.</li>
+    <li>You may delete any file created by this application directly in Google Drive. Deleting the corresponding folder deletes all data created by this application.</li>
+  </ul>
+
+  <h2 lang="en">8. Google API Services User Data Policy</h2>
+  <p lang="en">The use of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2 lang="en">9. Changes to this policy</h2>
+  <p lang="en">If this policy changes, the &ldquo;Last updated&rdquo; date at the top of this page will be revised.</p>
+
+  <h2 lang="en">10. Contact</h2>
+  <!-- replace with your real email -->
+  <p lang="en">Email: <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></p>
+
+  <footer>
+    rclone self-hosted OAuth client &middot; Privacy Policy &middot; 2026-09-15
+  </footer>
+
+</main>
+</body>
+</html>
